@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "scheduler-executor",
+    "name": "scheduler",
+    "region": "eu-west-2"
+  }
+}
