@@ -1,11 +1,10 @@
 const bugfixes = require('bugfixes')
 const libs = require('chewedfeed')
+const moment = require('moment')
 
 const bugfunctions = bugfixes.functions
 
 module.exports = (event, context, callback) => {
-  bugfixes.log('Schedule', event, context, callback)
-
   let store = libs.store
   store.getFeeds((error, result) => {
     if (error) {
@@ -16,6 +15,9 @@ module.exports = (event, context, callback) => {
         error: error
       }))
     }
+
+    bugfixes.log('Results', result)
+
 
     for (let i = 0; i < result.length; i++) {
       const queue = libs.queue

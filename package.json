@@ -18,7 +18,7 @@
   "dependencies": {
     "aws-sdk": "^2.245.1",
     "bugfixes": "^1.7.0",
-    "chewedfeed": "^0.0.13"
+    "chewedfeed": "^0.0.15"
   },
   "devDependencies": {
     "chai": "^4.1.2",
