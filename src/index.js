@@ -16,8 +16,7 @@ module.exports = (event, context, callback) => {
       }))
     }
 
-    bugfixes.log('Results', result)
-
+    bugfixes.info('Feed Count', result.length, moment().format())
 
     for (let i = 0; i < result.length; i++) {
       const queue = libs.queue
